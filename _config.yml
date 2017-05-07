@@ -1,0 +1,11 @@
+# Site settings
+title: Joaquín Serna
+##email: bubuanabelas<@>cryptolab<DOT>net
+description: Argentinian Programmer.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://bubuanabelas.github.io" # the base hostname & protocol for your site
+twitter_username: bubuanabelas
+github_username: bubuanabelas
+
+# Build settings
+markdown: kramdown

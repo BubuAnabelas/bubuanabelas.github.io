@@ -1,0 +1,66 @@
+<footer class="site-footer">
+
+	<h2 class="footer-heading"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h2>
+
+	<div class="footer-contact">
+		<ul class="footer-col">
+			<li><strong>Email <a href="https://lea.verou.me/2009/11/yet-another-email-hiding-technique/">(DO NOT COPY)</a>:</strong></li>
+			<li>BubuAnabelas&#xFF20;cryptolab&#x2024;net</li>
+		</ul>
+
+		<ul class="footer-col">
+			{% if site.github_username %}
+				<li>
+					<a href="https://github.com/{{ site.github_username }}">
+						GitHub
+					</a>
+				</li>
+			{% endif %}
+
+			{% if site.twitter_username %}
+				<li>
+					<a href="https://twitter.com/{{ site.twitter_username }}">
+						Twitter
+					</a>
+				</li>
+			{% endif %}
+		</ul>
+
+		<ul class="footer-col">
+			<li>{{ site.description }}</li>
+				<li><a href="https://github.com/ryanpcmcquen/ryanpcmcquen.github.io">source</a></li>
+		</ul>
+	</div>
+
+</footer>
+
+<!-- *********************************************************************** -->
+<!-- ************** DEFERS CSS LOADING TO IMPROVE PAGE SPEED *************** -->
+<!-- ***************************** THANKS TO: ****************************** -->
+<!--  https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery  -->
+<!-- *********************************************************************** -->
+<noscript id="deferred-styles">
+	<link rel='stylesheet' type='text/css' href='{{ site.baseurl }}/css/main.css'>
+	<link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+</noscript>
+<script>
+var loadDeferredStyles = function () {
+	var addStylesNode = document.getElementById("deferred-styles");
+	var replacement = document.createElement("div");
+	replacement.innerHTML = addStylesNode.textContent;
+	document.body.appendChild(replacement)
+	addStylesNode.parentElement.removeChild(addStylesNode);
+};
+var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+	webkitRequestAnimationFrame || msRequestAnimationFrame;
+if (raf) {
+	raf(function () {
+		window.setTimeout(loadDeferredStyles, 0);
+	});
+} else {
+	window.addEventListener('load', loadDeferredStyles);
+}
+</script>
+
+
+

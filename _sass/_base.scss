@@ -1,0 +1,112 @@
+/* Basic reset */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body simple style */
+body {
+    -webkit-text-size-adjust: 100%;
+    background-color: $background-color;
+    color: $text-color;
+    font-family: $base-font-family;
+    font-weight: $base-font-weight;
+    line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+    margin-bottom: $spacing-unit / 2;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+figure > img {
+    display: block;
+}
+
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+h5 {
+    font-size: .875em;
+}
+
+a {
+    color: $brand-color;
+    text-decoration: underline;
+
+    &:visited {
+        color: darken($brand-color, 5%);
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: underline;
+    }
+}
+
+blockquote {
+    border-left: 3px solid $brand-color;
+    color: $grey-color;
+    margin: 1em auto 1em;
+    padding-left: 1em;
+    page-break-inside: avoid;
+}
+
+pre, code {
+    font-family: monospace;
+    font-size: 1.1em;
+    background-color: #f0f0f0;
+}
+
+pre {
+    padding: 1em;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}

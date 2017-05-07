@@ -1,0 +1,21 @@
+<header class="site-header">
+	<a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+	<nav class="site-nav">
+		<input type="checkbox" class="hamburger-toggle" />
+		<div class="hamburger">
+			<span class="hamburger-slice"></span>
+			<span class="hamburger-slice"></span>
+			<span class="hamburger-slice"></span>
+		</div>
+    
+		<ul class="menu">
+			<li><a href="/">Home</a></li>
+			{% for page in site.pages %}
+			{% if page.title %}
+				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+			{% endif %}
+		{% endfor %}
+		</ul>
+	</nav>
+</header>
