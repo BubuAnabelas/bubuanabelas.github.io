@@ -62,7 +62,7 @@
 
 .hamburger-toggle:checked ~ .hamburger > .hamburger-slice:nth-of-type(1) {
     opacity: 1;
-    transform: rotate(45deg) translate(0px, 0px);
+    transform: rotate(45deg) translate(-1px, -1px);
     background: #232323;
 }
 
@@ -117,8 +117,7 @@
 .site-footer {
     display: flex;
     flex-direction: column;
-  
-    min-height: 50vh;
+
     width: 100%;
   
     border-top: 1px solid $grey-color-light;

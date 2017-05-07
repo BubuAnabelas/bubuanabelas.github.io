@@ -110,3 +110,24 @@ pre {
         }
     }
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: #efefef;
+    line-height: 2.5em;
+    padding: .3em;
+}
+
+td {
+    line-height: 2.5em;
+    padding: .3em;
+    border-top: 1px solid #aaa;
+}
+
+tr:nth-child(2n) {
+    background-color: #f1f1f1;
+}
